@@ -1,13 +1,13 @@
-package s22.viikko1;
+package chapter1.all;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Viikko1Application {
+public class AllApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Viikko1Application.class, args);
+		SpringApplication.run(AllApplication.class, args);
 	}
 
 }
