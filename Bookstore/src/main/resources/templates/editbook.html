@@ -1,16 +1,18 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
+<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
+
 <head>
-    <title>Bookstore</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
+	<title>Bookstore</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
+
 <body>
 	<h1>Add student</h1>
 	<div>
 		<form th:object="${book}" th:action="@{/save}" action="#" method="post">
 			<input type="hidden" id="id" th:field="*{id}" />
-		  	<label for="fname">Author</label>
+			<label for="fname">Author</label>
 			<input type="text" id="author" th:field="*{author}" />
 			<label for="fname">Title</label>
 			<input type="text" id="title" th:field="*{title}" />
@@ -22,4 +24,5 @@
 		</form>
 	</div>
 </body>
+
 </html>
